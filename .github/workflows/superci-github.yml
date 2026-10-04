@@ -1,5 +1,5 @@
-# AWS experiment: one spot machine per job, no fan-out. fastapi/fastapi's test.yml: test (os ubuntu-latest, python-version 3.14, uv-resolution highest, starlette-src starlette-git, deprecated-tests test-deprecation), for the Superaction scoreboard.
-name: Superaction (AWS)
+# fastapi/fastapi's test.yml: test (os ubuntu-latest, python-version 3.14, uv-resolution highest, starlette-src starlette-git, deprecated-tests test-deprecation), for the SuperCI scoreboard.
+name: SuperCI (GitHub)
 
 on:
   workflow_dispatch: {}
@@ -13,8 +13,8 @@ env:
 
 jobs:
   test:
-    name: test / superaction-aws
-    runs-on: superaction-aws
+    name: test / github
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
       UV_PYTHON: "3.14"

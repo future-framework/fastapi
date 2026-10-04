@@ -1,5 +1,5 @@
-# fastapi/fastapi's test.yml: test (os ubuntu-latest, python-version 3.14, uv-resolution highest, starlette-src starlette-git, deprecated-tests test-deprecation), for the Superaction scoreboard.
-name: Superaction
+# fastapi/fastapi's test.yml: test (os ubuntu-latest, python-version 3.14, uv-resolution highest, starlette-src starlette-git, deprecated-tests test-deprecation), for the SuperCI scoreboard.
+name: SuperCI
 
 on:
   workflow_dispatch: {}
@@ -13,8 +13,8 @@ env:
 
 jobs:
   test:
-    name: test / superaction-fabric
-    runs-on: superaction-fabric
+    name: test / superci
+    runs-on: superci
     timeout-minutes: 30
     env:
       UV_PYTHON: "3.14"
